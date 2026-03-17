@@ -72,11 +72,11 @@ const translations: Record<string, Record<Language, string>> = {
   
   // Contacts
   contactsTitle: { ru: 'Контакты', uz: 'Aloqa' },
-  location1Name: { ru: 'ТЦ NEXT, 1 этаж', uz: 'NEXT SM, 1-qavat' },
-  location1Address: { ru: 'Ташкент, Торговый центр NEXT', uz: 'Toshkent, NEXT savdo markazi' },
-  location2Name: { ru: 'Дархан часовой сервис', uz: 'Darhan soat xizmati' },
+  location1Name: { ru: 'ЖК Mirabad Avenue', uz: 'Mirabad Avenue' },
+  location1Address: { ru: 'Ташкент, Мирабадский район', uz: 'Toshkent, Mirabad tumani' },
+  location2Name: { ru: 'Бизнес-центр Darhan', uz: 'Darhan biznes markazi' },
   location2Address: { ru: 'Ташкент, Дархан', uz: 'Toshkent, Darhan' },
-  workingHours: { ru: 'Пн-Сб: 10:00 - 20:00', uz: 'Du-Sha: 10:00 - 20:00' },
+  workingHours: { ru: 'Ежедневно: 09:00 - 22:00', uz: 'Har kuni: 09:00 - 22:00' },
   
   // Gallery
   galleryTitle: { ru: 'Наши работы', uz: 'Bizning ishlar' },
@@ -239,7 +239,7 @@ export default function Home() {
         {/* Background Image */}
         <div className="absolute inset-0">
           <img 
-            src="/storefront.png" 
+            src="/storefront.jpg" 
             alt="CHASOVSHIK Storefront"
             className="w-full h-full object-cover"
           />
@@ -420,7 +420,7 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-8">
             <div className="relative group overflow-hidden">
               <img 
-                src="/interior2.png" 
+                src="/interior-services.jpg" 
                 alt="Watch Service Interior"
                 className="w-full h-[300px] md:h-[400px] object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500"
               />
@@ -476,11 +476,11 @@ export default function Home() {
                   <h3 className="text-xl font-semibold text-[#D4AF37] mb-2">{t('location1Name')}</h3>
                   <p className="text-white/70 mb-4">{t('location1Address')}</p>
                   <a 
-                    href="tel:+998998049004" 
+                    href="tel:+998958389999" 
                     className="flex items-center gap-2 text-white hover:text-[#D4AF37] transition-colors"
                   >
                     <Phone className="w-5 h-5" />
-                    <span className="text-lg">+998 99 804 90 04</span>
+                    <span className="text-lg">+998 95 838 99 99</span>
                   </a>
                 </div>
               </div>
@@ -496,11 +496,11 @@ export default function Home() {
                   <h3 className="text-xl font-semibold text-[#D4AF37] mb-2">{t('location2Name')}</h3>
                   <p className="text-white/70 mb-4">{t('location2Address')}</p>
                   <a 
-                    href="tel:+998958389999" 
+                    href="tel:+998954369999" 
                     className="flex items-center gap-2 text-white hover:text-[#D4AF37] transition-colors"
                   >
                     <Phone className="w-5 h-5" />
-                    <span className="text-lg">+998 95 838 99 99</span>
+                    <span className="text-lg">+998 95 436 99 99</span>
                   </a>
                 </div>
               </div>
@@ -542,7 +542,7 @@ export default function Home() {
                 <Instagram className="w-6 h-6" />
               </a>
               <a 
-                href="tel:+998998049004"
+                href="tel:+998958389999"
                 className="text-white/60 hover:text-[#D4AF37] transition-colors"
               >
                 <Phone className="w-6 h-6" />
