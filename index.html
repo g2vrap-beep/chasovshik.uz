@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CHASOVSHIK.UZ — Ремонт часов в Ташкенте | 12 лет опыта</title>
+  <meta name="description" content="Профессиональный ремонт и обслуживание часов в Ташкенте. 12 лет опыта. Замена батарейки, ремешка, стекла, полировка. 2 филиала: Дархан (Мустакиллик 88А) и Мирабад Авеню. Ежедневно 10:00–20:00.">
+  <meta name="keywords" content="ремонт часов Ташкент, часовщик Ташкент, замена батарейки часов, замена ремешка часов, часовая мастерская, chasovshik.uz, Tsar Bomba, часы купить Ташкент, полировка часов">
+  <meta name="author" content="CHASOVSHIK.UZ">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://chasovshik.uz/">
+
+  <!-- Open Graph (превью в WhatsApp, Telegram, соцсетях) -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://chasovshik.uz/">
+  <meta property="og:title" content="CHASOVSHIK.UZ — Ремонт часов в Ташкенте">
+  <meta property="og:description" content="Профессиональный ремонт часов. 12 лет опыта. 2 филиала в Ташкенте. Ежедневно 10:00–20:00.">
+  <meta property="og:image" content="https://chasovshik.uz/images/entrance.jpg">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:site_name" content="CHASOVSHIK.UZ">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="CHASOVSHIK.UZ — Ремонт часов в Ташкенте">
+  <meta name="twitter:description" content="Профессиональный ремонт часов. 12 лет опыта.">
+  <meta name="twitter:image" content="https://chasovshik.uz/images/entrance.jpg">
+
+  <!-- Schema.org LocalBusiness (для Google/Яндекс) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WatchRepairService",
+    "name": "CHASOVSHIK.UZ",
+    "url": "https://chasovshik.uz",
+    "logo": "https://chasovshik.uz/images/entrance.jpg",
+    "image": "https://chasovshik.uz/images/interior.jpg",
+    "description": "Профессиональный ремонт и обслуживание часов в Ташкенте. 12 лет опыта.",
+    "telephone": ["+998958389999", "+998954369999"],
+    "priceRange": "₽₽",
+    "openingHours": "Mo-Su 10:00-20:00",
+    "sameAs": [
+      "https://www.instagram.com/chasovshik.uz",
+      "https://t.me/chasovshikuz"
+    ],
+    "location": [
+      {
+        "@type": "Place",
+        "name": "Филиал Дархан",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "ул. Мустакиллик, 88А",
+          "addressLocality": "Ташкент",
+          "addressCountry": "UZ"
+        }
+      },
+      {
+        "@type": "Place",
+        "name": "Мирабад Авеню",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Мирабад Авеню, ориентир мойка Black Star",
+          "addressLocality": "Ташкент",
+          "addressCountry": "UZ"
+        }
+      }
+    ]
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ════ ГЛОБАЛЬНЫЙ ПЕРЕКЛЮЧАТЕЛЬ ЯЗЫКА ════ -->
+<div class="lang-switcher" id="lang-switcher">
+  <button class="lang-pill active" id="lp-ru" onclick="setLang('ru')">RU</button>
+  <button class="lang-pill" id="lp-uz" onclick="setLang('uz')">UZ</button>
+  <button class="lang-pill" id="lp-en" onclick="setLang('en')">EN</button>
+</div>
+
+<!-- ════════════════════════════════════════ -->
+<!--  ЭКРАН 1 — ВХОД                         -->
+<!-- ════════════════════════════════════════ -->
+<div id="s-entrance" class="screen active">
+  <div class="bg">
+    <img src="images/entrance.jpg" alt="Вход в мастерскую" onerror="this.style.display='none'">
+    <div class="overlay"></div>
+  </div>
+
+  <!-- 3 колонки: левый филиал | кнопка | правый филиал -->
+  <div class="entrance-main">
+
+    <!-- Левый филиал -->
+    <div class="branch-card">
+      <div class="branch-top-line"></div>
+      <div class="branch-name"
+        data-ru="Филиал Дархан"
+        data-uz="Darxon filiali"
+        data-en="Darkhan Branch">Филиал Дархан</div>
+      <div class="branch-row">
+        <span class="b-icon">📍</span>
+        <span data-ru="ул. Мустакиллик, 88А"
+              data-uz="Mustaqillik ko'ch., 88A"
+              data-en="Mustaqillik St., 88A">ул. Мустакиллик, 88А</span>
+      </div>
+      <div class="branch-row">
+        <span class="b-icon">🕐</span>
+        <span data-ru="Ежедневно 10:00 – 20:00"
+              data-uz="Har kuni 10:00 – 20:00"
+              data-en="Daily 10:00 – 20:00">Ежедневно 10:00 – 20:00</span>
+      </div>
+      <div class="branch-row">
+        <span class="b-icon">📞</span>
+        <div class="phones">
+          <a href="tel:+998958389999">+998 95 838-99-99</a>
+          <a href="tel:+998954369999">+998 95 436-99-99</a>
+        </div>
+      </div>
+      <a class="map-btn" href="https://yandex.uz/maps/10335/tashkent/search/Мустакиллик%2088А/" target="_blank">
+        <span data-ru="🗺 Открыть на карте"
+              data-uz="🗺 Xaritada ochish"
+              data-en="🗺 Open on map">🗺 Открыть на карте</span>
+      </a>
+    </div>
+
+    <!-- Центр: кнопка ВОЙТИ -->
+    <div class="entrance-center">
+      <div class="tagline"
+        data-ru="Часовые мастера с 12-летним опытом"
+        data-uz="12 yillik tajribali soat ustalari"
+        data-en="Watch Masters with 12 Years Experience">
+        Часовые мастера<br>с 12-летним опытом
+      </div>
+      <div class="enter-wrapper">
+        <div class="enter-pulse"></div>
+        <button class="enter-btn" onclick="goTo('s-interior')">
+          <span class="enter-txt"
+            data-ru="ВОЙТИ"
+            data-uz="KIRISH"
+            data-en="ENTER">ВОЙТИ</span>
+          <span class="enter-arrow">→</span>
+        </button>
+      </div>
+      <div class="enter-hint"
+        data-ru="Нажмите, чтобы войти"
+        data-uz="Kirish uchun bosing"
+        data-en="Click to enter">Нажмите, чтобы войти</div>
+      <div class="entrance-stats">
+        <span class="stat">
+          <span class="stat-num">12+</span>
+          <span data-ru="лет опыта" data-uz="yil tajriba" data-en="years of exp.">лет опыта</span>
+        </span>
+        <span class="stat-dot">·</span>
+        <span class="stat">
+          <span class="stat-num">2</span>
+          <span data-ru="филиала" data-uz="filial" data-en="branches">филиала</span>
+        </span>
+      </div>
+    </div>
+
+    <!-- Правый филиал -->
+    <div class="branch-card">
+      <div class="branch-top-line"></div>
+      <div class="branch-name"
+        data-ru="Мирабад Авеню"
+        data-uz="Mirabad Avenue"
+        data-en="Mirabad Avenue">Мирабад Авеню</div>
+      <div class="branch-row">
+        <span class="b-icon">📍</span>
+        <span data-ru="Мирабад Авеню, ориентир — мойка Black Star"
+              data-uz="Mirabad Avenue, mo'ljal — Black Star yuvish"
+              data-en="Mirabad Avenue, landmark — Black Star car wash">Мирабад Авеню,<br>ориентир — мойка Black Star</span>
+      </div>
+      <div class="branch-row">
+        <span class="b-icon">🕐</span>
+        <span data-ru="Ежедневно 10:00 – 20:00"
+              data-uz="Har kuni 10:00 – 20:00"
+              data-en="Daily 10:00 – 20:00">Ежедневно 10:00 – 20:00</span>
+      </div>
+      <div class="branch-row">
+        <span class="b-icon">📞</span>
+        <div class="phones">
+          <a href="tel:+998958389999">+998 95 838-99-99</a>
+          <a href="tel:+998954369999">+998 95 436-99-99</a>
+        </div>
+      </div>
+      <a class="map-btn" href="https://yandex.uz/maps/10335/tashkent/search/Мирабад%20Авеню/" target="_blank">
+        <span data-ru="🗺 Открыть на карте"
+              data-uz="🗺 Xaritada ochish"
+              data-en="🗺 Open on map">🗺 Открыть на карте</span>
+      </a>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- ════════════════════════════════════════ -->
+<!--  ЭКРАН 2 — ИНТЕРЬЕР (игровой)           -->
+<!-- ════════════════════════════════════════ -->
+<div id="s-interior" class="screen">
+  <div class="bg">
+    <img src="images/interior.jpg" alt="Интерьер мастерской" onerror="this.style.display='none'">
+    <div class="overlay overlay--soft"></div>
+  </div>
+
+  <!-- Минимальная шапка — только кнопка выхода -->
+  <div class="int-top">
+    <button class="back-btn" onclick="goTo('s-entrance')">
+      ← <span data-ru="Выход" data-uz="Chiqish" data-en="Exit">Выход</span>
+    </button>
+    <div class="logo small-logo">CHASOVSHIK<span>.UZ</span></div>
+    <div style="width:60px"></div>
+  </div>
+
+  <!-- Игровые зоны -->
+  <div class="workshop">
+
+    <!-- Слева: Услуги -->
+    <div class="hotspot hs-left" onclick="goTo('s-services')">
+      <div class="hs-glow"></div>
+      <div class="hs-icon">⚙️</div>
+      <div class="hs-label" data-ru="УСЛУГИ" data-uz="XIZMATLAR" data-en="SERVICES">УСЛУГИ</div>
+      <div class="hs-sub" data-ru="Ремонт и обслуживание" data-uz="Ta'mirlash" data-en="Repair & maintenance">Ремонт и обслуживание</div>
+    </div>
+
+    <!-- Центр: только контакты -->
+    <div class="desk-area">
+      <div class="desk-label"
+        data-ru="Выберите раздел"
+        data-uz="Bo'limni tanlang"
+        data-en="Select section">Выберите раздел</div>
+      <div class="hotspot hs-contacts-big" onclick="goTo('s-contacts')">
+        <div class="hs-glow"></div>
+        <div class="hs-icon">📋</div>
+        <div class="hs-label" data-ru="КОНТАКТЫ" data-uz="KONTAKTLAR" data-en="CONTACTS">КОНТАКТЫ</div>
+        <div class="hs-sub" data-ru="Адреса и телефоны" data-uz="Manzil va telefonlar" data-en="Addresses & phones">Адреса и телефоны</div>
+      </div>
+    </div>
+
+    <!-- Справа: Каталог -->
+    <div class="hotspot hs-right" onclick="goTo('s-catalog')">
+      <div class="hs-glow"></div>
+      <div class="hs-icon">⌚</div>
+      <div class="hs-label" data-ru="КАТАЛОГ" data-uz="KATALOG" data-en="CATALOG">КАТАЛОГ</div>
+      <div class="hs-sub" data-ru="Часы на продажу" data-uz="Soatlar sotuvi" data-en="Watches for sale">Часы на продажу</div>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- ════════════════════════════════════════ -->
+<!--  ЭКРАН 3 — УСЛУГИ                       -->
+<!-- ════════════════════════════════════════ -->
+<div id="s-services" class="screen">
+  <div class="bg">
+    <img src="images/services.jpg" alt="Услуги" onerror="this.src='images/interior.jpg'">
+    <div class="overlay"></div>
+  </div>
+
+  <div class="page-top">
+    <button class="back-btn" onclick="goTo('s-interior')">← <span data-ru="Назад" data-uz="Orqaga" data-en="Back">Назад</span></button>
+    <div class="page-title" data-ru="НАШИ УСЛУГИ" data-uz="BIZNING XIZMATLAR" data-en="OUR SERVICES">НАШИ УСЛУГИ</div>
+    <div style="width:60px"></div>
+  </div>
+
+  <div class="services-scroll">
+    <div class="services-grid">
+
+      <div class="svc-card">
+        <div class="svc-icon">🔋</div>
+        <div class="svc-body">
+          <div class="svc-name" data-ru="Замена батарейки" data-uz="Batareyka almashtirish" data-en="Battery Replacement">Замена батарейки</div>
+          <div class="svc-price" data-ru="от 100 000 сум" data-uz="100 000 so'mdan" data-en="from 100,000 sum">от 100 000 сум</div>
+          <div class="svc-desc"
+            data-ru="Швейцарские батарейки Renata. Гарантия 1 год, срок службы до 2,5 лет."
+            data-uz="Shveytsariya Renata batareykalari. 1 yil kafolat, 2,5 yilgacha."
+            data-en="Swiss Renata batteries. 1-year warranty, up to 2.5 years service life.">Швейцарские батарейки Renata. Гарантия 1 год, срок службы до 2,5 лет.</div>
+        </div>
+      </div>
+
+      <div class="svc-card">
+        <div class="svc-icon">⌚</div>
+        <div class="svc-body">
+          <div class="svc-name" data-ru="Замена ремешка" data-uz="Tasmani almashtirish" data-en="Strap Replacement">Замена ремешка</div>
+          <div class="svc-price" data-ru="от 250 000 сум" data-uz="250 000 so'mdan" data-en="from 250,000 sum">от 250 000 сум</div>
+          <div class="svc-desc"
+            data-ru="Бренды NAGATA (Испания) и DALFA (Италия). Размеры 8–30, широкий выбор цветов."
+            data-uz="NAGATA (Ispaniya) va DALFA (Italiya). 8–30 o'lcham."
+            data-en="NAGATA (Spain) & DALFA (Italy) brands. Sizes 8–30, wide color choice.">Бренды NAGATA (Испания) и DALFA (Италия). Размеры 8–30, широкий выбор цветов.</div>
+        </div>
+      </div>
+
+      <div class="svc-card">
+        <div class="svc-icon">🔧</div>
+        <div class="svc-body">
+          <div class="svc-name" data-ru="Ремонт часов" data-uz="Soat ta'mirlash" data-en="Watch Repair">Ремонт часов</div>
+          <div class="svc-price" data-ru="Цена индивидуальная" data-uz="Narx individual" data-en="Individual pricing">Цена индивидуальная</div>
+          <div class="svc-desc"
+            data-ru="7 дней — советские и китайские часы. 10 дней — швейцарские. Тщательная проверка качества."
+            data-uz="7 kun — sovet va xitoy soatlari. 10 kun — shveytsariya."
+            data-en="7 days — Soviet & Chinese watches. 10 days — Swiss. Thorough quality check.">7 дней — советские и китайские часы. 10 дней — швейцарские. Тщательная проверка качества.</div>
+        </div>
+      </div>
+
+      <div class="svc-card">
+        <div class="svc-icon">✨</div>
+        <div class="svc-body">
+          <div class="svc-name" data-ru="Полировка корпуса" data-uz="Korpusni sayqallash" data-en="Case Polishing">Полировка корпуса</div>
+          <div class="svc-price" data-ru="Цена после осмотра" data-uz="Narx ko'rikdan so'ng" data-en="Price after inspection">Цена после осмотра</div>
+          <div class="svc-desc"
+            data-ru="Матовая, глянцевая или комбинированная (2 цвета). Бережное отношение к каждому механизму."
+            data-uz="Matli, yaltiroq yoki kombinatsiyalangan (2 rang)."
+            data-en="Matte, glossy or combined (2 tones). Careful handling of every mechanism.">Матовая, глянцевая или комбинированная (2 цвета). Бережное отношение к каждому механизму.</div>
+        </div>
+      </div>
+
+      <div class="svc-card">
+        <div class="svc-icon">🔍</div>
+        <div class="svc-body">
+          <div class="svc-name" data-ru="Замена стекла" data-uz="Oyna almashtirish" data-en="Crystal Replacement">Замена стекла</div>
+          <div class="svc-price" data-ru="Цена индивидуальная" data-uz="Narx individual" data-en="Individual pricing">Цена индивидуальная</div>
+          <div class="svc-desc"
+            data-ru="Пластиковые, минеральные и сапфировые стёкла. Возможна индивидуальная выточка."
+            data-uz="Plastik, mineral va safir oynalar. Individual ishlash mumkin."
+            data-en="Plastic, mineral and sapphire crystals. Custom cutting available.">Пластиковые, минеральные и сапфировые стёкла. Возможна индивидуальная выточка.</div>
+        </div>
+      </div>
+
+      <div class="svc-card svc-cta">
+        <div class="svc-icon">💬</div>
+        <div class="svc-body">
+          <div class="svc-name" data-ru="Нужна консультация?" data-uz="Maslahat kerakmi?" data-en="Need a consultation?">Нужна консультация?</div>
+          <div class="svc-desc" data-ru="Напишите нам — ответим быстро!" data-uz="Yozing — tez javob beramiz!" data-en="Write to us — we'll respond fast!">Напишите нам — ответим быстро!</div>
+          <div class="svc-cta-btns">
+            <button class="mini-btn" onclick="openInsta()">📸 Instagram</button>
+            <button class="mini-btn" onclick="openTelegram()">✈️ Telegram</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<!-- ════════════════════════════════════════ -->
+<!--  ЭКРАН 4 — КОНТАКТЫ (визитка)           -->
+<!-- ════════════════════════════════════════ -->
+<div id="s-contacts" class="screen">
+  <div class="bg">
+    <img src="images/plastic_visitka.png" alt="CHASOVSHIK визитка" style="filter:brightness(0.95)">
+    <div class="overlay" style="background:linear-gradient(180deg,rgba(0,0,0,.45) 0%,rgba(0,0,0,.15) 50%,rgba(0,0,0,.55) 100%)"></div>
+  </div>
+
+  <button class="back-btn back-abs" onclick="goTo('s-interior')">← <span data-ru="Назад" data-uz="Orqaga" data-en="Back">Назад</span></button>
+
+  <div class="bizcard-wrap">
+    <div class="bizcard">
+
+      <div class="bc-logo">CHASOVSHIK<span>.UZ</span></div>
+      <div class="bc-tagline"
+        data-ru="Часовые мастера · Ташкент"
+        data-uz="Soat ustalari · Toshkent"
+        data-en="Watch Masters · Tashkent">Часовые мастера · Ташкент</div>
+      <div class="bc-line"></div>
+
+      <div class="bc-branches">
+        <div class="bc-branch">
+          <div class="bc-branch-title"
+            data-ru="📍 Филиал Дархан"
+            data-uz="📍 Darxon filiali"
+            data-en="📍 Darkhan Branch">📍 Филиал Дархан</div>
+          <div class="bc-addr"
+            data-ru="ул. Мустакиллик, 88А"
+            data-uz="Mustaqillik ko'ch., 88A"
+            data-en="Mustaqillik St., 88A">ул. Мустакиллик, 88А</div>
+          <a href="tel:+998958389999" class="bc-phone">+998 95 838-99-99</a>
+          <a href="tel:+998954369999" class="bc-phone">+998 95 436-99-99</a>
+          <a href="https://yandex.uz/maps/10335/tashkent/search/Мустакиллик%2088А/" target="_blank" class="bc-maplink">
+            🗺 <span data-ru="На карте" data-uz="Xaritada" data-en="On map">На карте</span>
+          </a>
+        </div>
+
+        <div class="bc-divider-v"></div>
+
+        <div class="bc-branch">
+          <div class="bc-branch-title"
+            data-ru="📍 Мирабад Авеню"
+            data-uz="📍 Mirabad Avenue"
+            data-en="📍 Mirabad Avenue">📍 Мирабад Авеню</div>
+          <div class="bc-addr"
+            data-ru="Ориентир — мойка Black Star"
+            data-uz="Mo'ljal — Black Star yuvish"
+            data-en="Landmark — Black Star car wash">Ориентир — мойка Black Star</div>
+          <a href="tel:+998958389999" class="bc-phone">+998 95 838-99-99</a>
+          <a href="tel:+998954369999" class="bc-phone">+998 95 436-99-99</a>
+          <a href="https://yandex.uz/maps/10335/tashkent/search/Мирабад%20Авеню/" target="_blank" class="bc-maplink">
+            🗺 <span data-ru="На карте" data-uz="Xaritada" data-en="On map">На карте</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="bc-line"></div>
+
+      <div class="bc-hours">
+        🕐 <span
+          data-ru="Ежедневно, без выходных: 10:00 – 20:00"
+          data-uz="Har kuni, dam olish kunlarisiz: 10:00 – 20:00"
+          data-en="Daily, no days off: 10:00 – 20:00">Ежедневно, без выходных: 10:00 – 20:00</span>
+      </div>
+
+      <div class="bc-social">
+        <a href="https://www.instagram.com/chasovshik.uz" target="_blank" class="bc-social-btn">
+          <span>📸</span> @chasovshik.uz
+        </a>
+        <a href="https://t.me/chasovshikuz" target="_blank" class="bc-social-btn">
+          <span>✈️</span> Telegram
+        </a>
+      </div>
+
+      <div class="bc-years"
+        data-ru="12 лет профессиональной заботы о ваших часах"
+        data-uz="Soatlaringizga 12 yillik professional g'amxo'rlik"
+        data-en="12 years of professional care for your watches">
+        12 лет профессиональной заботы о ваших часах
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+
+<!-- ════════════════════════════════════════ -->
+<!--  ЭКРАН 5 — КАТАЛОГ ЧАСОВ                -->
+<!-- ════════════════════════════════════════ -->
+<div id="s-catalog" class="screen">
+  <div class="bg">
+    <img src="images/shop1.jpg" alt="Каталог" onerror="this.src='images/interior.jpg'">
+    <div class="overlay"></div>
+  </div>
+
+  <div class="page-top">
+    <button class="back-btn" onclick="goTo('s-interior')">← <span data-ru="Назад" data-uz="Orqaga" data-en="Back">Назад</span></button>
+    <div class="page-title" data-ru="КАТАЛОГ ЧАСОВ" data-uz="SOATLAR KATALOGI" data-en="WATCH CATALOG">КАТАЛОГ ЧАСОВ</div>
+    <div style="width:60px"></div>
+  </div>
+
+  <div class="catalog-note">
+    <span data-ru="Для уточнения наличия и стоимости — свяжитесь с нами"
+          data-uz="Mavjudlik va narx uchun biz bilan bog'laning"
+          data-en="For availability and pricing — contact us">
+      Для уточнения наличия и стоимости — свяжитесь с нами
+    </span>
+  </div>
+
+  <div class="catalog-scroll">
+    <div class="catalog-grid" id="catalog-grid">
+
+      <div class="watch-card">
+        <div class="watch-img-box"><img src="images/Tsar Bomba 1.jpg" alt="Tsar Bomba Elemental 1"></div>
+        <div class="watch-info">
+          <div class="watch-brand">Tsar Bomba</div>
+          <div class="watch-model">Elemental · Сталь / Голубой</div>
+          <div class="watch-status status-avail" data-ru="В наличии" data-uz="Mavjud" data-en="In stock">В наличии</div>
+        </div>
+      </div>
+
+      <div class="watch-card">
+        <div class="watch-img-box"><img src="images/Tsar Bomba 2.jpg" alt="Tsar Bomba Elemental 2"></div>
+        <div class="watch-info">
+          <div class="watch-brand">Tsar Bomba</div>
+          <div class="watch-model">Elemental · Rose Gold / Синий</div>
+          <div class="watch-status status-avail" data-ru="В наличии" data-uz="Mavjud" data-en="In stock">В наличии</div>
+        </div>
+      </div>
+
+      <div class="watch-card">
+        <div class="watch-img-box"><img src="images/Tsar Bomba 3.jpg" alt="Tsar Bomba Elemental 3"></div>
+        <div class="watch-info">
+          <div class="watch-brand">Tsar Bomba</div>
+          <div class="watch-model">Elemental · Edition 3</div>
+          <div class="watch-status status-avail" data-ru="В наличии" data-uz="Mavjud" data-en="In stock">В наличии</div>
+        </div>
+      </div>
+
+      <div class="watch-card">
+        <div class="watch-img-box"><img src="images/Tsar Bomba 4.jpg" alt="Tsar Bomba Elemental 4"></div>
+        <div class="watch-info">
+          <div class="watch-brand">Tsar Bomba</div>
+          <div class="watch-model">Elemental · Edition 4</div>
+          <div class="watch-status status-avail" data-ru="В наличии" data-uz="Mavjud" data-en="In stock">В наличии</div>
+        </div>
+      </div>
+
+      <div class="watch-card">
+        <div class="watch-img-box"><img src="images/Tsar Bomba 5.jpg" alt="Tsar Bomba Elemental 5"></div>
+        <div class="watch-info">
+          <div class="watch-brand">Tsar Bomba</div>
+          <div class="watch-model">Elemental · Edition 5</div>
+          <div class="watch-status status-avail" data-ru="В наличии" data-uz="Mavjud" data-en="In stock">В наличии</div>
+        </div>
+      </div>
+
+      <div class="watch-card">
+        <div class="watch-img-box"><img src="images/Tsar Bomba 6.jpg" alt="Tsar Bomba Elemental 6"></div>
+        <div class="watch-info">
+          <div class="watch-brand">Tsar Bomba</div>
+          <div class="watch-model">Elemental · Edition 6</div>
+          <div class="watch-status status-avail" data-ru="В наличии" data-uz="Mavjud" data-en="In stock">В наличии</div>
+        </div>
+      </div>
+
+      <div class="watch-card watch-cta" onclick="openTelegram()">
+        <div class="watch-cta-icon">💬</div>
+        <div class="watch-cta-text"
+          data-ru="Узнать цену или уточнить наличие"
+          data-uz="Narx yoki mavjudlikni aniqlash"
+          data-en="Ask for price or availability">
+          Узнать цену или уточнить наличие
+        </div>
+        <div style="display:flex;gap:.5rem;flex-wrap:wrap;justify-content:center;margin-top:.3rem">
+          <button class="mini-btn" onclick="event.stopPropagation();openInsta()">📸 Instagram</button>
+          <button class="mini-btn" onclick="event.stopPropagation();openTelegram()">✈️ Telegram</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
